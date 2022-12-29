@@ -6,9 +6,9 @@ const whitelist = require('./whitelist.js')
 const _initBaseURI='ipfs://QmY8j6RaBekRn7T536urybkACQwcqbqnQyPTNCp6JdQgZ9/'
 
 async function main() {
-  const nftFactory = await hre.ethers.getContractFactory('Test4')
+  const nftFactory = await hre.ethers.getContractFactory('PMTR')
   const nftContract = await nftFactory.attach(
-    '0x1c109341F354755Cb8ac3a2436295cb3537A401e'
+    '0xf47F5A0968877F1CDeB73175B46DdFAd275e3430'
   )
 
     // Calculate merkle root from the whitelist array
@@ -18,9 +18,9 @@ async function main() {
     console.log(' Merkleroot is: 0x' + root)
 
     let arr = [
-    '0xe45658822652AA4DCE376e084a3950BF272e2cAf',
-    '0xD7a57782dFbEB34CB96590d32671984B517D4Ec2',
-    '0xa93EEd127B40835Ed0B0C8A2108dEED05dC44fA8'
+    
+    '0x2b312D8Af6400f1b19d1c282553310b33Cf8d43a',
+    '0x8754C7b8a8a3aacCE661832Eb9503960C5D506c8'
   ];
     for (let address of arr) {
       const leaf = keccak256(address)

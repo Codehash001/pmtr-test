@@ -73,7 +73,7 @@ export const wlMint = async (mintAmount) => {
   // Verify Merkle Proof
   const isValid = merkleTree.verify(proof, leaf, root)
 
-  if (!isValid) {
+  if (!isValid) { 
     return {
       success: false,
       status: '❌ Invalid Merkle Proof - You are not whitelisted'

@@ -14,16 +14,19 @@ contract PMTR is ERC721A, Ownable, ReentrancyGuard {
   string public baseExtension = ".json";
   string public notRevealedUri; 
 
-  uint256 public firstCost = 0.001 ether;
-  uint256 public secondCost = 0.003 ether;
-  uint256 public thirdCost = 0.005 ether;
+  uint256 public firstCost = 0.001 ether; //put equal usd values
+  uint256 public secondCost = 0.003 ether; // ''
+  uint256 public thirdCost = 0.005 ether; // ''
   
   uint256 private cost;
   uint256 public wlCost = 0.0001 ether;
 
   uint256 public maxSupply = 10000;
-  uint256 public MaxperWallet = 4;
-  uint256 public MaxperWalletWL = 2;
+  uint256 public maxWlSupply = 200; // only 100 after mint 100 in airdrop
+  uint256 public maxAirdropSupply = 100;
+
+  uint256 public MaxperWallet = 10;
+  uint256 public MaxperWalletWL = 1;
   uint256 public MaxPerWalletAirdrop = 1; // add a function to change this
 
   bool public paused = false;
@@ -61,11 +64,11 @@ contract PMTR is ERC721A, Ownable, ReentrancyGuard {
     require(tokens > 0, "need to mint at least 1 NFT");
     require(tokens <= MaxperWallet, "max mint amount per Tx exceeded");
     require(supply + tokens <= maxSupply, "We Soldout");
-    if(supply + tokens > 7000)
+    if(supply + tokens > 7700)
       {
         cost = thirdCost ;
         }
-    else if (supply + tokens > 3500)
+    else if (supply + tokens > 4000)
     {
       cost = secondCost ;
     }
@@ -87,7 +90,8 @@ contract PMTR is ERC721A, Ownable, ReentrancyGuard {
     uint256 supply = totalSupply();
     require(_numberMinted(_msgSender()) + tokens <= MaxperWalletWL, "Max NFT Per Wallet exceeded");
     require(tokens > 0, "need to mint at least 1 NFT");
-    require(supply + tokens <= maxSupply, "We Soldout");
+    require(supply + tokens <= maxWlSupply, "Max Whitelisted-sale supply reached");
+    require(supply + tokens <= maxSupply, "We soldout");
     require(tokens <= MaxperWalletWL, "max mint amount per Tx exceeded");
     require(msg.value >= wlCost ,"insufficient funds");
 
@@ -95,7 +99,7 @@ contract PMTR is ERC721A, Ownable, ReentrancyGuard {
     
   }
 
-  // Airdrop for everyone
+  // Airdrop for public
 
     function Airdrop(uint256 tokens) public nonReentrant {
       require(airdropEnabled , "Airdrop isn't available yet");
@@ -103,8 +107,12 @@ contract PMTR is ERC721A, Ownable, ReentrancyGuard {
       uint256 supply = totalSupply();
       require(_numberMinted(_msgSender()) + tokens <= MaxPerWalletAirdrop, "Max NFT Per Wallet exceeded");
       require(tokens > 0, "need to mint at least 1 NFT");
-    require(supply + tokens <= maxSupply, "We Soldout");
-    require(tokens <= MaxPerWalletAirdrop, "max mint amount per Tx exceeded");
+      require(supply + tokens <= maxAirdropSupply, "max Airdrop supply reached");
+      require(supply + tokens <= maxSupply, "We soldout");
+      require(tokens <= MaxPerWalletAirdrop, "max mint amount per Tx exceeded");
+      
+
+      _safeMint(_msgSender(), tokens);
     }
 
 
@@ -190,6 +198,14 @@ contract PMTR is ERC721A, Ownable, ReentrancyGuard {
 
     function setMaxsupply(uint256 _newsupply) public onlyOwner {
     maxSupply = _newsupply;
+  }
+
+     function setMaxAirdropSupply(uint256 _newsupply) public onlyOwner {
+    maxAirdropSupply = _newsupply;
+  }
+
+     function setMaxWlSupply(uint256 _newsupply) public onlyOwner {
+    maxWlSupply = _newsupply;
   }
 
  
