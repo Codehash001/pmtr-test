@@ -9,7 +9,7 @@ function home () {
     
       <div className="relative bg-black/75 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
-        <div className="flex flrx-col items-center">
+        <div className="flex flex-col items-center">
           <h1 className="font-Kanit text-[35px] text-white uppercase">Minting is Live!</h1>
           <h1 className='font-Kanit text-[25px] text-gray-400 mt-2'>Not Connected</h1>
         </div>
