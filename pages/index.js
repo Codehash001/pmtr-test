@@ -92,7 +92,7 @@ function home () {
 </a>
 
 {/* social media icons */}
-<div className="flex w-full">
+<div className="flex w-full items-center justify-between">
   <div className="bg-white rounded-full mx-2">
     <img src='discord.svg' className='h-8 w-8 m-1'/>
   </div>
