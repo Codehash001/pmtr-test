@@ -94,17 +94,13 @@ function home () {
 {/* social media icons */}
 <div className="flex w-full">
   <div className="bg-white rounded-full mx-2">
-    <img src='etherscan.svg' className='h-8 w-8 m-2'/>
+    <img src='discord.svg' className='h-8 w-8 m-1'/>
   </div>
   <div className="bg-white rounded-full mx-2">
-    <img src='discord.png' className='h-8 w-8 m-2'/>
+    <img src='facebook.svg' className='h-8 w-8 m-1'/>
   </div>
   <div className="bg-white rounded-full mx-2">
-    <img src='facebook.svg' className='h-8 w-8 '/>
-  </div>
-  <div className="bg-white rounded-full mx-2">
-    <img src='twitter.svg' className='h-8 w-8 m-2'/>
-    
+    <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </div>
 </div>
 
