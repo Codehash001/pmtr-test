@@ -75,6 +75,11 @@ function home () {
                       <span className="text-yellow-300">+ GAS</span>
                     </div>
 
+
+                  </div>
+                </div>
+
+                
                     {/* mint button */}
 
                     <a href="/" class="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group font-Kanit">
@@ -86,8 +91,6 @@ function home () {
 <span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Connect Wallet</span>
 </a>
 
-                  </div>
-                </div>
                 </div>
         </div>
       </div>
