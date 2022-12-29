@@ -35,7 +35,7 @@ function home () {
                     </svg>
                   </button>
                   <p className="flex items-center justify-center flex-1 grow text-center font-bold text-brand-02 text-3xl md:text-4xl">
-                  {mintAmount}
+                  {/* {mintAmount} */}
                   </p>
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
