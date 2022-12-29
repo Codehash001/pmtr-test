@@ -4,10 +4,10 @@ function home () {
 
 
   return (
-    <div className="min-h-screen w-full overflow-hidden">
+    <div className="min-h-screen w-full overflow-hidden flex flex-col items-center">
       <img src="/background.png" className="object-over w-full h-full absolute"/>
     
-      <div className="relative w-full bg-black/75 filter  py-4 rounded-md px-2 md:px-10 flex flex-col items-center
+      <div className="relative bg-black/75 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flrx-col items-center justify-start">
           <h1 className="font-kanit text-[35px] text-white">Minting is Live!</h1>
