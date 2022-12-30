@@ -101,7 +101,6 @@ function home () {
 <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
 <span class="relative">Connect Wallet</span>
 </a>
-</a>
 
 {/* social media icons */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
