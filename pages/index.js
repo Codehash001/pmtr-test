@@ -11,7 +11,7 @@ function home () {
     <div className="min-h-screen w-full overflow-hidden flex flex-col items-center justify-center">
       <img src="/background.png" className="object-over w-full h-full absolute"/>
 
-      <div className='relative flex flex-col items-center justify-between my-4 w-full h-screen'>
+      <div className='relative flex flex-col items-center justify-between py-4 w-full h-screen'>
       <div className=" bg-black/75 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center">
