@@ -1,4 +1,5 @@
 import { Rerousel } from 'rerousel';
+import { useState, useEffect, useRef } from "react";
 
 
 function home () {
