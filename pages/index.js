@@ -14,8 +14,7 @@ function home () {
       <div className='relative flex flex-col items-center justify-between md:py-[20px] md:px-16 w-full h-screen'>
       <div className=" bg-black/75 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
-        <div className="flex flex-col items-center">
-          
+        <div className="flex flex-col items-center"> 
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
           <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-3">
             Minting Is Live!
@@ -30,7 +29,7 @@ function home () {
             </h3>
                   
             {/* Increment decrement buttons */}
-            <div className="font-Kanit flex items-center justify-between w-full mt-5">
+            <div className="font-Kanit flex items-center justify-between w-full mt-5 md:mx-16">
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick=''>
@@ -77,7 +76,7 @@ function home () {
                   {/* {paused ? '0' : isWlMint ? config.WlMaxMintAmount : config.maxMintAmount} */}
                 </p>
 
-                <div className="border-t border-b py-4 mt-5 w-full">
+                <div className="border-t border-b py-4 mt-5 w-full md:mx-16">
                   <div className="w-full text-xl font-Kanit flex items-center justify-between text-yellow-300">
                     <p>Total</p>
 
@@ -108,7 +107,7 @@ function home () {
 </a>
 
 {/* social media icons */}
-<div className="flex w-full items-center justify-between mt-5">
+<div className="flex w-full items-center justify-between mt-5 md:mx-16">
   <div className="bg-white rounded-full mx-2">
     <img src='discord.svg' className='h-8 w-8 m-1'/>
   </div>
