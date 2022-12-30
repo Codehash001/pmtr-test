@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-export default class Slider extends Component {
+export default class Autoplay extends Component {
   render() {
     const settings = {
       dots: true,

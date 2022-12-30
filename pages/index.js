@@ -1,6 +1,6 @@
 import { Rerousel } from 'rerousel';
 import { useState, useEffect, useRef } from "react";
-import Slider from '../components/Carousel';
+import Autoplay from '../components/Carousel';
 
 
 function home () {
@@ -115,7 +115,7 @@ function home () {
       </div>
 
       <div className='relative'>
-        <Slider/>
+        <Autoplay/>
       </div>
 
     </div>
