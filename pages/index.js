@@ -115,7 +115,7 @@ function home () {
         </div>
       </div>
 
-      <div>
+      <div className='flex items-center justify-between'>
       <div className="mx-2">
             <img src='1.png' className="w-[100px] h-[100px]"/>
           </div>
