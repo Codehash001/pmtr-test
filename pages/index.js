@@ -17,9 +17,17 @@ function home () {
         <div className="flex flex-col items-center">
           
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
-            <div><h1 className="font-Kanit text-[35px] text-white uppercase font-semibold my-0">
-                <span className='bg-gradient-to-t from-amber-600 via-orange-500 to-yellow-800 bg-clip-text text-transparent'>Minting{' '}</span>is Live!<br/>Not Connected</h1>
-            </div>
+          <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-3">
+            Minting Is Live!
+            {/* {paused ? 'Paused' : isWlMint ? 'Whitelisted Sale' : 'Public Sale'} */}
+          </h1>
+
+            <h3 className="text-sm text-gray-100 tracking-widest">
+            {/* {walletAddress
+                ? walletAddress.slice(0, 8) + '...' + walletAddress.slice(-4)
+                : ''} */}
+                0x12345678abcde123
+            </h3>
                   
             {/* Increment decrement buttons */}
             <div className="font-Kanit flex items-center justify-between w-full mt-5">
