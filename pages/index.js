@@ -96,13 +96,11 @@ function home () {
                 
                     {/* mint button */}
 
-                    <a href="/" class="relative mt-5 px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group font-Kanit">
-<span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
-<span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
-<span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
-<span class="absolute inset-0 w-full h-full duration-300 delay-300 bg-gray-900 opacity-0 group-hover:opacity-100"></span>
-<span class="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Connect Wallet</span>
+                    <a href="#_" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-Kanit font-medium tracking-tighter text-white bg-gray-800 rounded-lg group">
+<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-bg-gradient-to-r from-amber-300 via-orange-400 to-red-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
+<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+<span class="relative">Connect Wallet</span>
+</a>
 </a>
 
 {/* social media icons */}
