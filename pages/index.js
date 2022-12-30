@@ -116,7 +116,21 @@ function home () {
       </div>
 
       <div>
-        <Autoplay/>
+      <div className="mx-2">
+            <img src='1.png' className="w-[100px] h-[100px]"/>
+          </div>
+          <div className="mx-2">
+            <img src='2.png' className="w-[100px] h-[100px]"/>
+          </div>
+          <div className="mx-2">
+            <img src='3.png' className="w-[100px] h-[100px]"/>
+          </div>
+          <div className="mx-2">
+            <img src='4.png' className="w-[100px] h-[100px]"/>
+          </div>
+          <div className="mx-2">
+            <img src='5.png' className="w-[100px] h-[100px]"/>
+          </div>
       </div>
       </div>
 
