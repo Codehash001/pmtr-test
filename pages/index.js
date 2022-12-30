@@ -115,21 +115,36 @@ function home () {
         </div>
       </div>
 
-      <div className='flex items-center justify-between'>
-      <div className="mx-2">
-            <img src='1.png' className="w-[100px] h-[100px]"/>
+      <div className='flex w-full items-center justify-between mt-4'>
+          <div className="mx-2">
+            <img src='1.png' className="w-[100px] h-[100px] rounded-md"/>
           </div>
           <div className="mx-2">
-            <img src='2.png' className="w-[100px] h-[100px]"/>
+            <img src='2.png' className="w-[100px] h-[100px] rounded-md"/>
           </div>
           <div className="mx-2">
-            <img src='3.png' className="w-[100px] h-[100px]"/>
+            <img src='3.png' className="w-[100px] h-[100px] rounded-md"/>
           </div>
           <div className="mx-2">
-            <img src='4.png' className="w-[100px] h-[100px]"/>
+            <img src='4.png' className="w-[100px] h-[100px] rounded-md"/>
           </div>
           <div className="mx-2">
-            <img src='5.png' className="w-[100px] h-[100px]"/>
+            <img src='5.png' className="w-[100px] h-[100px] rounded-md"/>
+          </div>
+          <div className="mx-2">
+            <img src='1.png' className="w-[100px] h-[100px] rounded-md"/>
+          </div>
+          <div className="mx-2">
+            <img src='2.png' className="w-[100px] h-[100px] rounded-md"/>
+          </div>
+          <div className="mx-2">
+            <img src='3.png' className="w-[100px] h-[100px] rounded-md"/>
+          </div>
+          <div className="mx-2">
+            <img src='4.png' className="w-[100px] h-[100px] rounded-md"/>
+          </div>
+          <div className="mx-2">
+            <img src='5.png' className="w-[100px] h-[100px] rounded-md"/>
           </div>
       </div>
       </div>
