@@ -27,6 +27,10 @@ function home () {
                 : ''} */}
                 0x12345678abcde123
             </h3>
+
+            <p className="text-2xl text-white font-semibold font-Kanit tracking-widest mt-5">
+                  1/1000 NFts minted so far
+            </p>
                   
             {/* Increment decrement buttons */}
             <div className="font-Kanit flex items-center justify-between w-full mt-5">
@@ -71,14 +75,6 @@ function home () {
                     </svg>
                   </button> 
                 </div> 
-                <p className="text-2xl text-white font-semibold font-Kanit tracking-widest mt-5">
-                  1/1000 Nfts minted
-                </p>
-
-                <p className="text-sm text-gray-100 font-Kanit tracking-widest mt-5">
-                  Max Mint Amount Per Wallet: 10
-                  {/* {paused ? '0' : isWlMint ? config.WlMaxMintAmount : config.maxMintAmount} */}
-                </p>
 
                 <div className="border-t border-b py-4 mt-5 w-full font-semibold">
                   <div className="w-full text-xl font-Kanit flex items-center justify-between text-yellow-300">
