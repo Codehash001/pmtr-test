@@ -19,7 +19,7 @@ function home () {
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
             <h1 className="font-Kanit text-[35px] text-white uppercase font-semibold my-0">
                 <span className='bg-gradient-to-t from-amber-600 via-orange-500 to-yellow-800 bg-clip-text text-transparent'>Minting{' '}</span>is Live!</h1>
-            <h1 className='font-Kanit text-[25px] text-gray-400 my-0'>Not Connected</h1>
+            <br/>Not Connected
                   
             {/* Increment decrement buttons */}
             <div className="font-Kanit flex items-center justify-between w-full mt-5">
