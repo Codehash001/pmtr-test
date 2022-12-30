@@ -12,7 +12,7 @@ function home () {
     align-items: center;
     width: calc(100%/2);
     height: 100px;
-    font-family: Signika;
+    font-family: Kanit;
     font-weight: bold;
     font-size: 1.5em;
     border: solid 1px black;
