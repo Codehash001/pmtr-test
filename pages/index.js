@@ -16,13 +16,13 @@ function home () {
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center">
           
-          <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-5">
-            <h1 className="font-Kanit text-[35px] text-white uppercase font-semibold">
+          <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
+            <h1 className="font-Kanit text-[35px] text-white uppercase font-semibold my-0">
                 <span className='bg-gradient-to-t from-amber-600 via-orange-500 to-yellow-800 bg-clip-text text-transparent'>Minting{' '}</span>is Live!</h1>
-            <h1 className='font-Kanit text-[25px] text-gray-400 mt-0'>Not Connected</h1>
+            <h1 className='font-Kanit text-[25px] text-gray-400 my-0'>Not Connected</h1>
                   
             {/* Increment decrement buttons */}
-            <div className="font-Kanit flex items-center justify-between w-full">
+            <div className="font-Kanit flex items-center justify-between w-full mt-5">
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick=''>
