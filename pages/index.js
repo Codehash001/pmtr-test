@@ -12,14 +12,17 @@ function home () {
       <img src="/background.png" className="object-over w-full h-full absolute"/>
 
       <div className='relative flex flex-col items-center justify-between md:py-[20px] md:px-16 w-full h-screen'>
-      <div className=" bg-conic-gradient(at left bottom, rgb(153, 27, 27), rgb(202, 138, 4), rgb(234, 179, 8))/754 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
-    bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
+      <div className=" bg-black/75 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
+    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center">
-          <h1 className="font-Kanit text-[35px] text-white uppercase">Minting is Live!</h1>
-          <h1 className='font-Kanit text-[25px] text-gray-400 mt-0'>Not Connected</h1>
+          
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-5">
-            {/* Increment decrement buttons */}
+            
                 <div className="font-Kanit flex items-center justify-between w-full">
+                  <h1 className="font-Kanit text-[35px] text-white uppercase font-semibold">
+                    <span className='bg-gradient-to-t from-amber-600 via-orange-500 to-yellow-800 bg-clip-text text-transparent'>Minting{' '}</span>is Live!</h1>
+                  <h1 className='font-Kanit text-[25px] text-gray-400 mt-0'>Not Connected</h1>
+                  {/* Increment decrement buttons */}
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick=''>
