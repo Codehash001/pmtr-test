@@ -70,8 +70,12 @@ function home () {
                       />
                     </svg>
                   </button> 
-                </div>  
-                <p className="text-sm text-gray-100 tracking-widest mt-5">
+                </div> 
+                <p className="text-2xl text-white font-semibold font-Kanit tracking-widest mt-5">
+                  1/1000 Nfts minted
+                </p>
+
+                <p className="text-sm text-gray-100 font-Kanit tracking-widest mt-5">
                   Max Mint Amount Per Wallet: 10
                   {/* {paused ? '0' : isWlMint ? config.WlMaxMintAmount : config.maxMintAmount} */}
                 </p>
@@ -119,7 +123,6 @@ function home () {
   </div>
 </div>
 
-<h1 className="font-Kanit font-semibold text-white text-[20px]">Contract address :{' '}<span className="text-blue-400 cursor-pointer">Ox12345678ABCDE123 </span></h1>
 
                 </div>
         </div>
