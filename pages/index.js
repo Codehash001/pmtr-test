@@ -11,8 +11,8 @@ function home () {
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center">
           <h1 className="font-Kanit text-[35px] text-white uppercase">Minting is Live!</h1>
-          <h1 className='font-Kanit text-[25px] text-gray-400'>Not Connected</h1>
-          <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0 ">
+          <h1 className='font-Kanit text-[25px] text-gray-400 mt-0'>Not Connected</h1>
+          <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-5">
             {/* Increment decrement buttons */}
                 <div className="font-Kanit flex items-center justify-between w-full">
                   <button
@@ -61,7 +61,7 @@ function home () {
                   {/* {paused ? '0' : isWlMint ? config.WlMaxMintAmount : config.maxMintAmount} */}
                 </p>
 
-                <div className="border-t border-b py-4 mt-9 w-full">
+                <div className="border-t border-b py-4 mt-5 w-full">
                   <div className="w-full text-xl font-Kanit flex items-center justify-between text-yellow-300">
                     <p>Total</p>
 
@@ -70,7 +70,7 @@ function home () {
                         {/* {Number.parseFloat(paused ? '0.00' : isWlMint && EligbleForFreeMint ? config.wlcost*(mintAmount-1) : isWlMint ? config.wlcost*mintAmount : config.publicSalePrice*mintAmount).toFixed(
                           2
                         )}{' '} */}
-                        0.001{''}ETH
+                        0.001{' '}ETH
                       </p>{' '}
                       <span className="text-yellow-300">+ GAS</span>
                     </div>
@@ -82,7 +82,7 @@ function home () {
                 
                     {/* mint button */}
 
-                    <a href="/" class="relative px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group font-Kanit">
+                    <a href="/" class="relative mt-5 px-5 py-3 overflow-hidden font-medium text-gray-600 bg-gray-100 border border-gray-100 rounded-lg shadow-inner group font-Kanit">
 <span class="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-gray-600 group-hover:w-full ease"></span>
 <span class="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-gray-600 group-hover:w-full ease"></span>
 <span class="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-gray-600 group-hover:h-full ease"></span>
@@ -92,7 +92,7 @@ function home () {
 </a>
 
 {/* social media icons */}
-<div className="flex w-full items-center justify-between">
+<div className="flex w-full items-center justify-between mt-5">
   <div className="bg-white rounded-full mx-2">
     <img src='discord.svg' className='h-8 w-8 m-1'/>
   </div>
@@ -103,6 +103,8 @@ function home () {
     <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </div>
 </div>
+
+<h1 className="font-Kanit font-semibold text-white text-[20px]">Contract address :{' '}<span className="text-blue-400 cursor-pointer">Ox12345678ABCDE123 </span></h1>
 
                 </div>
         </div>
