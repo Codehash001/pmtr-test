@@ -37,8 +37,7 @@ function home () {
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick=''>
-                   
-                    <svg
+                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 md:h-8 md:w-8"
                       fill="none"
@@ -49,12 +48,12 @@ function home () {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                        d="M18 12H6"
                       />
                     </svg>
                   </button>
                   <p className="flex items-center justify-center flex-1 grow text-center font-bold text-brand-02 text-3xl md:text-4xl">
-                  {/* {mintAmount} */}
+                  {/* {mintAmount} */} 1
                   </p>
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
@@ -70,7 +69,7 @@ function home () {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M18 12H6"
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
                       />
                     </svg>
                   </button> 
