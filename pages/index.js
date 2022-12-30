@@ -29,7 +29,7 @@ function home () {
             </h3>
                   
             {/* Increment decrement buttons */}
-            <div className="font-Kanit flex items-center justify-between w-full mt-5">
+            <div className="font-Kanit flex items-center justify-between w-full mt-5 px-10">
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick=''>
