@@ -11,12 +11,12 @@ function home () {
     <div className="min-h-screen w-full overflow-hidden flex flex-col items-center justify-center">
       <img src="/background.png" className="object-over w-full h-full absolute"/>
 
-      <div className='relative flex flex-col items-center justify-between md:py-[20px] md:px-16 w-full h-screen'>
+      <div className='relative flex flex-col items-center justify-between md:pb-[20px] md:pt-16 md:px-16 w-full h-screen'>
       <div className=" bg-black/75 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center"> 
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
-          <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-3">
+          <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0">
             Minting Is Live!
             {/* {paused ? 'Paused' : isWlMint ? 'Whitelisted Sale' : 'Public Sale'} */}
           </h1>
