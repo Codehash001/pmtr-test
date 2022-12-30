@@ -16,7 +16,7 @@ function home () {
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center"> 
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
-          <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0">
+          <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-widest">
             Minting Is Live!
             {/* {paused ? 'Paused' : isWlMint ? 'Whitelisted Sale' : 'Public Sale'} */}
           </h1>
@@ -28,7 +28,7 @@ function home () {
                 0x12345678abcde123
             </h3>
 
-            <p className="text-2xl text-white font-semibold font-Kanit tracking-widest mt-5">
+            <p className="text-2xl text-white font-semibold font-Kanit mt-5">
                   1/1000 NFts minted so far
             </p>
                   
