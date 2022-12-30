@@ -1,6 +1,26 @@
-import Carousel from "../components/Carousel";
+import { Rerousel } from 'rerousel';
+
 
 function home () {
+
+  const ref = useRef(null);
+
+  const Item = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%/2);
+    height: 100px;
+    font-family: Signika;
+    font-weight: bold;
+    font-size: 1.5em;
+    border: solid 1px black;
+    background-color: #61DAFB;
+    
+    @media(max-width: 1150px) {
+        width: 100%
+    }
+  `;
 
 
   return (
@@ -108,6 +128,16 @@ function home () {
 
                 </div>
         </div>
+      </div>
+
+      <div className='relative'>
+        <Rerousel itemRef={ref}>
+        <Item ref={ref}>1</Item>
+        <Item>2</Item>
+        <Item>3</Item>
+        <Item>4</Item>
+        <Item>5</Item>
+        </Rerousel>
       </div>
 
     </div>
