@@ -29,7 +29,7 @@ function home () {
             </h3>
                   
             {/* Increment decrement buttons */}
-            <div className="font-Kanit flex items-center justify-between w-full mt-5 px-10">
+            <div className="font-Kanit flex items-center justify-between w-full mt-5">
                   <button
                     className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick=''>
@@ -76,7 +76,7 @@ function home () {
                   {/* {paused ? '0' : isWlMint ? config.WlMaxMintAmount : config.maxMintAmount} */}
                 </p>
 
-                <div className="border-t border-b py-4 mt-5 w-full">
+                <div className="border-t border-b py-4 mt-5 w-full font-semibold">
                   <div className="w-full text-xl font-Kanit flex items-center justify-between text-yellow-300">
                     <p>Total</p>
 
@@ -107,7 +107,7 @@ function home () {
 </a>
 
 {/* social media icons */}
-<div className="flex w-full items-center justify-between mt-5">
+<div className="flex w-full items-center justify-evenly mt-5 px-10">
   <div className="bg-white rounded-full mx-2">
     <img src='discord.svg' className='h-8 w-8 m-1'/>
   </div>
