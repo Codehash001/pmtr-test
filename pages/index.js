@@ -12,8 +12,8 @@ function home () {
       <img src="/background.png" className="object-over w-full h-full absolute"/>
 
       <div className='relative flex flex-col items-center justify-between md:py-[20px] md:px-16 w-full h-screen'>
-      <div className=" bg-conic-gradient(at left bottom, rgb(153, 27, 27), rgb(202, 138, 4), rgb(234, 179, 8))/75 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
-    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
+      <div className=" bg-conic-gradient(at left bottom, rgb(153, 27, 27), rgb(202, 138, 4), rgb(234, 179, 8))/754 filter py-4 rounded-md px-2 md:px-10 flex flex-col items-center
+    bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center">
           <h1 className="font-Kanit text-[35px] text-white uppercase">Minting is Live!</h1>
           <h1 className='font-Kanit text-[25px] text-gray-400 mt-0'>Not Connected</h1>
