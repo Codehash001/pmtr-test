@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, } from "react";
 import {  getTotalMinted,
           getFirstCost,
           getSecondCost,
@@ -19,7 +19,7 @@ import {  getTotalMinted,
                           } from "../ulits/interact";
 
 
-function home () {
+export default function Home () {
 
   const [maxSupply, setMaxSupply] = useState(0)
   const [totalMinted, setTotalMinted] = useState(0)
@@ -306,7 +306,6 @@ useEffect(() => {
   )
 }
 
-export default home
 
 //<div className='min-h-screen h-full w-full overflow-hidden flex flex-col items-center justify-center bg-brand-background'>
 
