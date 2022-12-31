@@ -22,7 +22,7 @@ function home () {
           </div>
       </div>
 
-      <div className=" bg-black/75 filter rounded-md px-2 md:px-6 flex flex-col items-center
+      <div className=" bg-black/75 filter rounded-md px-2 flex flex-col items-center
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 w-full">
         <div className="flex flex-col items-center"> 
           <div className="flex flex-col items-center w-full px-4 py-4 mt-16 md:mt-0">
