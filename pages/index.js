@@ -1,4 +1,5 @@
 import { useState, useEffect, } from "react";
+import { initOnboard } from "../ulits/onboard";
 import {  getTotalMinted,
           getFirstCost,
           getSecondCost,
