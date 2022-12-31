@@ -15,10 +15,10 @@ function home () {
       
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='1.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
+            <img src='1.png' className="w-[150px] h-[150px] rounded-md border border-gray-100"/>
           </div>
           <div className="mx-auto">
-            <img src='2.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
+            <img src='2.png' className="w-[200px] h-[200px] rounded-md border border-gray-100"/>
           </div>
       </div>
 
@@ -27,7 +27,7 @@ function home () {
         <div className="flex flex-col items-center w-full"> 
           <div className="flex flex-col items-center w-full py-4 mt-16 md:mt-0 px-16">
           
-          <div className='pb-4 border-b-2 border-amber-800 flex flex-col items-center'>
+          <div className='pb-4  flex flex-col items-center'>
             <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider">
             Minting Is Live!
             {/* {paused ? 'Paused' : isWlMint ? 'Whitelisted Sale' : 'Public Sale'} */}
@@ -135,10 +135,10 @@ function home () {
 
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='1.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
+            <img src='1.png' className="w-[150px] h-[150px] rounded-md border border-gray-100"/>
           </div>
           <div className="mx-auto">
-            <img src='2.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
+            <img src='2.png' className="w-[200px] h-[200px] rounded-md border border-gray-100"/>
           </div>
       </div>
       </div>
