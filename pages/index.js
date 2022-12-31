@@ -16,7 +16,9 @@ function home () {
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
         <div className="flex flex-col items-center"> 
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
-          <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider">
+          
+          <div className='pb-4 border-b-2 border-amber-800'>
+            <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider">
             Minting Is Live!
             {/* {paused ? 'Paused' : isWlMint ? 'Whitelisted Sale' : 'Public Sale'} */}
           </h1>
@@ -29,8 +31,9 @@ function home () {
             </h3>
 
             <p className="text-2xl text-white font-semibold font-Kanit mt-5 tracking-wide">
-                  1/1000 NFTs minted
+                  1/10000 NFTs minted
             </p>
+          </div>
                   
             {/* Increment decrement buttons */}
             <div className="font-Kanit flex items-center justify-between w-full mt-5">
@@ -97,7 +100,7 @@ function home () {
                     {/* mint button */}
 
                     <a href="#_" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-Kanit font-medium tracking-tighter text-white bg-gray-800 rounded-lg group mt-5">
-<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-linear-gradient(to right, rgb(202, 138, 4), rgb(220, 38, 38)) rounded-full group-hover:w-56 group-hover:h-56"></span>
+<span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-amber-800 rounded-full group-hover:w-56 group-hover:h-56"></span>
 <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
 <span class="relative tracking-wide font-mediumr">Connect Wallet</span>
 </a>
