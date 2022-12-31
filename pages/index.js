@@ -18,7 +18,7 @@ function home () {
             <img src='1.png' className="w-[150px] h-[150px] rounded-md border border-gray-100"/>
           </div>
           <div className="mx-auto">
-            <img src='2.png' className="w-[200px] h-[200px] rounded-md border border-gray-100"/>
+            <img src='2.png' className="w-[150px] h-[150px] rounded-md border border-gray-100"/>
           </div>
       </div>
 
@@ -135,7 +135,7 @@ function home () {
 
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='1.png' className="w-[200px] h-[200px] rounded-md border border-gray-100"/>
+            <img src='1.png' className="w-[150px] h-[150px] rounded-md border border-gray-100"/>
           </div>
           <div className="mx-auto">
             <img src='2.png' className="w-[150px] h-[150px] rounded-md border border-gray-100"/>
