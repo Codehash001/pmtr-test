@@ -125,25 +125,25 @@ function home () {
 
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='1.png' className="w-[100px] h-[100px] rounded-md"/>
+            <img src='1.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
           <div className="mx-auto">
-            <img src='2.png' className="w-[100px] h-[100px] rounded-md"/>
+            <img src='2.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
           <div className="mx-auto">
             <img src='3.png' className="w-[100px] h-[100px] rounded-md"/>
           </div>
           <div className="mx-auto">
-            <img src='4.png' className="w-[100px] h-[100px] rounded-md"/>
+            <img src='4.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
           <div className="mx-auto">
-            <img src='5.png' className="w-[100px] h-[100px] rounded-md"/>
+            <img src='5.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
           <div className="mx-auto">
-            <img src='1.png' className="w-[100px] h-[100px] rounded-md"/>
+            <img src='1.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
           <div className="mx-auto">
-            <img src='2.png' className="w-[100px] h-[100px] rounded-md"/>
+            <img src='2.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
       </div>
       </div>
