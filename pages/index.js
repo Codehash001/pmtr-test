@@ -11,7 +11,7 @@ function home () {
     <div className="min-h-screen w-full overflow-hidden flex flex-col items-center justify-center">
       <img src="/background.png" className="object-over w-full h-full absolute"/>
 
-      <div className='relative flex flex-col items-center md:flex-row md:justify-between justify-between md:py-12 md:px-12 w-full h-screen'>
+      <div className='relative flex flex-col items-center md:flex-row md:justify-between justify-between md:py-12 w-full h-screen'>
       
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
@@ -23,7 +23,7 @@ function home () {
       </div>
 
       <div className=" bg-black/75 filter rounded-md px-2 md:px-6 flex flex-col items-center
-    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150">
+    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 w-full">
         <div className="flex flex-col items-center"> 
           <div className="flex flex-col items-center w-full px-4 mt-16 md:mt-0">
           
