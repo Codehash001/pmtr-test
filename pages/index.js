@@ -39,6 +39,7 @@ export default function Home () {
   const [walletAddress, setWalletAddress] = useState('')
 
   const [cost, setCost] = useState(0)
+  const [ethcost, setEthcost] = useState (0)
 
   useEffect(() => {
     const init = async () => {
@@ -54,6 +55,8 @@ export default function Home () {
       setIsAirdroping(await isAirdropState())
 
       setCost(isAirdroping? 0 : isWlMint? await getWlCost() : totalMinted > 7700 ? await getThirdCost() : totalMinted > 4000 ? await getSecondCost() : totalMinted > 200 ? await getFirstCost() : 0)
+      // Global BigInt
+      setEthcost(cost/10**18)
 
       setMaxMintAmount(
         isAirdroping? await getMaxperWalletAirdrop(): isWlMint ? await getMaxperWalletWl() : await getMaxperWallet()
@@ -92,6 +95,9 @@ useEffect(() => {
     if (walletSelected) {
       await onboard.walletCheck()
       window.location.reload(false)
+
+      console.log(maxMintAmount)
+      console.log(cost)
     }
   }
   const incrementMintAmount = () => {
@@ -244,22 +250,26 @@ useEffect(() => {
 
                 
                     {/* mint button */}
-                    { isMinting || paused ? (
-                    <button className="bg-gray-900 cursor-not-allowed text-white font-kanit font-medium px-10 py-4">
-                        {isMinting? 'Busy..' : 'Mint'}
-                    </button>): walletAddress?
-                    (
-                    <button onClick={isAirdroping?  airdropHandler : isWlMint ? wlMintHandler : publicMintHandler}
-                    class="relative inline-flex items-center justify-start px-10 py-4 overflow-hidden font-medium transition-all bg-brand-02 rounded-lg hover:bg-white group">
-<span class="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-lg"></span>
-<span class="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-brand-02">Mint now</span>
-</button>) : (
-                    <button onClick={connectWalletHandler}
-                    className="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-Kanit font-medium tracking-tighter text-white bg-gray-800 rounded-lg group mt-5">
-<span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-brand-02 rounded-full group-hover:w-56 group-hover:h-56"></span>
-<span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
-<span className="relative tracking-wide font-mediumr">Connect Wallet</span>
-</button>) }
+                    {walletAddress ? (
+                  <button
+                    className={` ${
+                      paused || isMinting 
+                        ? 'bg-gray-900 cursor-not-allowed'
+                        : 'bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60'
+                    } font-Kanit mt-5 mb-0  w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50`}
+                    disabled={paused || isMinting}
+                    onClick={isWlMint ? wlMintHandler : isAirdroping? airdropHandler : publicMintHandler}
+                  >
+                    {isMinting ? 'Busy...' : 'Mint Now'}
+                  </button>
+                ) : (
+                  <button
+                    className='bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60
+                     font-Kanit mt-5 mb-0  w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50'
+                     onClick={connectWalletHandler}
+                     >
+                    Connect wallet
+                  </button> )}
 
 {/* social media icons */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
@@ -278,7 +288,7 @@ useEffect(() => {
               {status && (
               <div
                 className={`border ${
-                  status.success ? 'border-green-500 text-white' : 'border-red-600'
+                  status.success ? 'border-green-500 text-white' : 'border-red-600 text-white'
                 } rounded-md text-start h-full px-4 py-4 w-full mx-auto mt-8 md:mt-4"`}
               >
                 <p className="flex flex-col space-y-2 text-sm md:text-base break-words ...">
