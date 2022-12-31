@@ -238,7 +238,7 @@ useEffect(() => {
                         {/* {Number.parseFloat(paused ? '0.00' : isWlMint && EligbleForFreeMint ? config.wlcost*(mintAmount-1) : isWlMint ? config.wlcost*mintAmount : config.publicSalePrice*mintAmount).toFixed(
                           2
                         )}{' '} */}
-                        {cost}
+                        {ethcost}
                         {' '}ETH
                       </p>{' '}
                       <span className="text-yellow-300">+ GAS</span>
@@ -256,7 +256,7 @@ useEffect(() => {
                       paused || isMinting 
                         ? 'bg-gray-900 cursor-not-allowed'
                         : 'bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60'
-                    } font-Kanit mt-5 mb-0  w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50`}
+                    } font-Kanit mt-5 mb-0 font-medium w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50`}
                     disabled={paused || isMinting}
                     onClick={ isAirdroping? airdropHandler : isWlMint ? wlMintHandler : publicMintHandler}
                   >
@@ -265,7 +265,7 @@ useEffect(() => {
                 ) : (
                   <button
                     className='bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60
-                     font-Kanit mt-5 mb-0  w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50'
+                     font-Kanit mt-5 mb-0 font-medium w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50'
                      onClick={connectWalletHandler}
                      >
                     Connect wallet
@@ -284,7 +284,7 @@ useEffect(() => {
   </div>
 </div>
 
-            <div className="font-Kanit mt-5 px-10">
+            <div className="font-Kanit mt-5">
               {status && (
               <div
                 className={`border ${
