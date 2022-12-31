@@ -258,7 +258,7 @@ useEffect(() => {
                         : 'bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60'
                     } font-Kanit mt-5 mb-0  w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50`}
                     disabled={paused || isMinting}
-                    onClick={isWlMint ? wlMintHandler : isAirdroping? airdropHandler : publicMintHandler}
+                    onClick={ isAirdroping? airdropHandler : isWlMint ? wlMintHandler : publicMintHandler}
                   >
                     {isMinting ? 'Busy...' : 'Mint Now'}
                   </button>
