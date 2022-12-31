@@ -20,9 +20,6 @@ function home () {
           <div className="mx-auto">
             <img src='2.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
-          <div className="mx-auto">
-            <img src='3.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
-          </div>
       </div>
 
       <div className=" bg-black/75 filter rounded-md px-2 md:px-6 flex flex-col items-center
@@ -142,9 +139,6 @@ function home () {
           </div>
           <div className="mx-auto">
             <img src='2.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
-          </div>
-          <div className="mx-auto">
-            <img src='3.png' className="w-[100px] h-[100px] rounded-md border border-gray-600"/>
           </div>
       </div>
       </div>
