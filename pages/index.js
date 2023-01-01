@@ -49,7 +49,7 @@ export default function Home () {
       setIsWlMint(isWlMint)
       setIsAirdroping(await isAirdropState())
 
-      setCost(isAirdroping? 0 : isWlMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : totalMinted > 200 ? config.firstCost : 0)
+      setCost(isAirdroping? 0 : isWlMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : isPublicSale && totalMinted > 0 ? config.firstCost : 0)
       // Global BigInt
   
 
