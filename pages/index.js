@@ -178,7 +178,7 @@ useEffect(() => {
             </h3>
           </div>
             <p className="hidden md:flex text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
-                  <span className="text-yellow-300">{totalMinted}{' '}</span>/{' '}<span className="text-yellow-300">{maxSupply}</span>{' '}Minted
+                  <span className="text-yellow-300">{totalMinted +' '}</span>/<span className="text-yellow-300">{' ' + maxSupply +' '}</span>Minted
             </p>
 
             <div className="md:hidden relative w-full">
@@ -191,7 +191,7 @@ useEffect(() => {
 
                 <img
                 src="/gif1.gif"
-                  className="object-cover w-full mt-auto mb-0 sm:h-[100px] md:w-[100px] rounded-md border border-gray-100"
+                  className="object-cover w-full mt-auto mb-0 h-[100px] w-[100px] rounded-md border border-gray-100"
                 />
                 </div>
           
