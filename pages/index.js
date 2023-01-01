@@ -266,7 +266,7 @@ useEffect(() => {
                     Connect wallet
                   </button> )}
 
-{/* social media icons */}
+{/* social media icons paste correct links down beow */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
   <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://discrord.com'>
     <img src='discord.svg' className='h-8 w-8 m-1'/>
@@ -276,6 +276,9 @@ useEffect(() => {
   </a>
   <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://twitter.com'>
     <img src='twitter.svg' className='h-8 w-8 m-1'/>
+  </a>
+  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://etherscan.io'>
+    <img src='etherscan.svg' className='h-8 w-8 m-1'/>
   </a>
 </div>
 
