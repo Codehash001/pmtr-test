@@ -146,12 +146,13 @@ useEffect(() => {
   } 
 
   return (
-    <div className="min-h-screen w-full overflow-hidden flex flex-col items-center justify-center">
-      <img src="/bg.png" className="object-over w-full h-full absolute"/>
+    <div className="min-h-screen w-full md:overflow-hidden overflow-auto flex flex-col items-center justify-center">
+      <img src="/bg.png" className="hidden md:flex object-cover w-full h-full absolute"/>
+      <img src="/bgmobile.png" className="md:hidden object-cover w-full h-full absolute"/>
 
       <div className='relative flex flex-col items-center md:flex-row md:justify-between justify-between md:py-12 w-full h-screen'>
       
-      <div className='flex w-full items-center justify-between'>
+      <div className='hidden md:flex w-full items-center justify-between'>
           <div className="mx-auto"> 
             <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-lg shadow-black/60"/>
           </div>
@@ -163,7 +164,7 @@ useEffect(() => {
       <div className=" bg-black/75 filter rounded-md flex flex-col items-center
     bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 w-full shadow-lg shadow-black/60">
         <div className="flex flex-col items-center w-full"> 
-          <div className="flex flex-col items-center w-full py-4 mt-16 md:mt-0 px-16">
+          <div className="flex flex-col items-center w-full py-4 mt-6 md:mt-0 md:px-16 px-4">
           
           <div className='pb-4  flex flex-col items-center'>
             <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider text-center">
@@ -176,9 +177,23 @@ useEffect(() => {
                 : 'Not connected'} 
             </h3>
           </div>
-            <p className="text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
+            <p className="hidden md:flex text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
                   <span className="text-yellow-300">{totalMinted}{' '}</span>/{' '}<span className="text-yellow-300">{maxSupply}</span>{' '}Minted
             </p>
+
+            <div className="md:hidden relative w-full">
+                <div className="font-Righteous z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-brand-purple rounded-md flex items-center justify-center text-white font-semibold">
+                  <p>
+                    <span className="text-brand-05">{totalMinted}</span> /{' '} {maxSupply}
+                   
+                  </p>
+                </div>
+
+                <img
+                src="/gif1.gif"
+                  className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
+                />
+                </div>
           
                   
             {/* Increment decrement buttons */}
@@ -301,7 +316,7 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className='flex w-full items-center justify-between'>
+      <div className='hidden md:flex w-full items-center justify-between'>
           <div className="mx-auto">
             <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-lg shadow-black/60"/>
           </div>
