@@ -250,8 +250,8 @@ useEffect(() => {
                     className={` ${
                       paused || isMinting 
                         ? 'bg-gray-900 cursor-not-allowed'
-                        : 'bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60'
-                    } font-Kanit mt-5 mb-0 font-medium w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50`}
+                        : 'bg-gradient-to-br from-gray-900 to-black shadow-lg border border-transparent hover:shadow-black/60'
+                    } font-Kanit mt-5 mb-0 font-medium w-full px-6 py-3 rounded-md text-2xl text-white  mx-4 tracking-wide uppercase border-violet-50`}
                     disabled={paused || isMinting}
                     onClick={ isAirdroping? airdropHandler : isWlMint ? wlMintHandler : publicMintHandler}
                   >
@@ -259,8 +259,8 @@ useEffect(() => {
                   </button>
                 ) : (
                   <button
-                    className='bg-gradient-to-br from-brand-01 to-brand-02 shadow-lg border border-transparent hover:shadow-black/60
-                     font-Kanit mt-5 mb-0 font-medium w-full px-6 py-3 rounded-md text-2xl text-black  mx-4 tracking-wide uppercase border-violet-50'
+                    className='bg-gradient-to-br from-gray-900 to-black shadow-lg border border-transparent hover:shadow-black/60
+                     font-Kanit mt-5 mb-0 font-medium w-full px-6 py-3 rounded-md text-2xl text-white  mx-4 tracking-wide uppercase border-violet-50'
                      onClick={connectWalletHandler}
                      >
                     Connect wallet
