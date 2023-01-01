@@ -147,7 +147,7 @@ useEffect(() => {
 
   return (
     <div className="min-h-screen w-full md:overflow-hidden overflow-auto flex flex-col items-center justify-center">
-      <img src="/bg.png" className="hidden md:flex object-cover w-full h-full absolute"/>
+      <img src="/bg.png" className="hidden md:flex w-full h-full absolute"/>
       <img src="/bgmobile.png" className="md:hidden object-cover w-full h-full absolute"/>
 
       <div className='relative flex flex-col items-center md:flex-row md:justify-between justify-between md:py-12 w-full h-screen'>
