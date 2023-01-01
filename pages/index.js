@@ -153,10 +153,10 @@ useEffect(() => {
       
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto"> 
-            <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-black/50"/>
+            <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-black/60"/>
           </div>
           <div className="mx-auto">
-            <img src='gif2.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-black/50"/>
+            <img src='gif2.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-black/60"/>
           </div>
       </div>
 
@@ -268,13 +268,13 @@ useEffect(() => {
 
 {/* social media icons */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
-  <div className="bg-white rounded-full mx-2 hove:shadow-black/50 hover:rotate-45">
+  <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
     <img src='discord.svg' className='h-8 w-8 m-1'/>
   </div>
-  <div className="bg-white rounded-full mx-2 hove:shadow-black/50 hover:rotate-45">
+  <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
     <img src='facebook.svg' className='h-8 w-8 m-1'/>
   </div>
-  <div className="bg-white rounded-full mx-2 hove:shadow-black/50 hover:rotate-45">
+  <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
     <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </div>
 </div>
@@ -300,10 +300,10 @@ useEffect(() => {
 
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-black/50"/>
+            <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-black/60"/>
           </div>
           <div className="mx-auto">
-            <img src='gif4.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-black/50"/>
+            <img src='gif4.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-black/60"/>
           </div>
       </div>
       </div>
