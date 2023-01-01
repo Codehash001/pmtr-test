@@ -98,6 +98,8 @@ useEffect(() => {
   const incrementMintAmount = () => {
     if (mintAmount < maxMintAmount) {
       setMintAmount(mintAmount + 1)
+      consloe.log(maxMintAmount)
+      console.log(cost)
     }
   }
 
@@ -230,7 +232,7 @@ useEffect(() => {
 
                     <div className="flex items-center space-x-3">
                     <p>
-                         {Number.parseFloat({cost}).toFixed(
+                         {Number.parseFloat(cost).toFixed(
                           2
                         )}{' '} 
                        
