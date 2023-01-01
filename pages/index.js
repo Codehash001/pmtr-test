@@ -109,7 +109,7 @@ useEffect(() => {
      
     }
 
-    consloe.log(maxMintAmount)
+    console.log(maxMintAmount)
     console.log(cost)
   }
 
