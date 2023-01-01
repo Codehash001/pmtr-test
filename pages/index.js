@@ -191,7 +191,7 @@ useEffect(() => {
 
                 <img
                 src="/gif1.gif"
-                  className="object-cover w-full mt-auto mb-0 sm:h-[280px] md:w-[250px] rounded-md border border-gray-100"
+                  className="object-cover w-full mt-auto mb-0 sm:h-[100px] md:w-[100px] rounded-md border border-gray-100"
                 />
                 </div>
           
