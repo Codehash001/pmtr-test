@@ -153,15 +153,15 @@ useEffect(() => {
       
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto"> 
-            <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-black/60"/>
+            <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-lg shadow-black/60"/>
           </div>
           <div className="mx-auto">
-            <img src='gif2.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-black/60"/>
+            <img src='gif2.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-lg shadow-black/60"/>
           </div>
       </div>
 
       <div className=" bg-black/75 filter rounded-md flex flex-col items-center
-    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 w-full drop-shadow-lg">
+    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 w-full shadow-lg shadow-black/60">
         <div className="flex flex-col items-center w-full"> 
           <div className="flex flex-col items-center w-full py-4 mt-16 md:mt-0 px-16">
           
@@ -177,14 +177,14 @@ useEffect(() => {
             </h3>
           </div>
             <p className="text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
-                  <span className="text-brand-03">{totalMinted}{' '}</span>/{' '}<span className="text-brand-03">{maxSupply}</span>{' '}Minted
+                  <span className="text-yellow-300">{totalMinted}{' '}</span>/{' '}<span className="text-yellow-300">{maxSupply}</span>{' '}Minted
             </p>
           
                   
             {/* Increment decrement buttons */}
             <div className="font-Kanit flex items-center justify-between w-full mt-5">
                   <button
-                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-full"
+                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick={decrementMintAmount}>
                      <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +205,7 @@ useEffect(() => {
                   {mintAmount} 
                   </p>
                   <button
-                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-full"
+                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
                     onClick={incrementMintAmount} >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -268,20 +268,14 @@ useEffect(() => {
 
 {/* social media icons */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
-  <a href="http://discrod.com">
-    <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
-      <img src='discord.svg' className='h-8 w-8 m-1'/>
-    </div>
+  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://discrord.com'>
+    <img src='discord.svg' className='h-8 w-8 m-1'/>
   </a>
-  <a href="http://facebook.com">
-    <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
-      <img src='facebook.svg' className='h-8 w-8 m-1'/>
-    </div>
+  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://facebook.com'>
+    <img src='facebook.svg' className='h-8 w-8 m-1'/>
   </a>
-  <a href="http://twitter.com">
-    <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
-      <img src='twitter.svg' className='h-8 w-8 m-1'/>
-    </div>
+  <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://twitter.com'>
+    <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </a>
 </div>
 
@@ -306,10 +300,10 @@ useEffect(() => {
 
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-black/60"/>
+            <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 shadow-lg shadow-black/60"/>
           </div>
           <div className="mx-auto">
-            <img src='gif4.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-black/60"/>
+            <img src='gif4.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 shadow-lg shadow-black/60"/>
           </div>
       </div>
       </div>
