@@ -157,8 +157,7 @@ export const wlMint = async (mintAmount) => {
       success: true,
       status: (
         <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
-          <p>✅ Check out your transaction on Etherscan:</p>
-          <p>{`https://goerli.etherscan.io/tx/${txHash}`}</p>
+          <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
         </a>
       )
     }
@@ -231,8 +230,7 @@ export const publicMint = async (mintAmount) => {
       success: true,
       status: (
         <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
-          <p>✅ Check out your transaction on Etherscan:</p>
-          <p>{`https://goerli.etherscan.io/tx/${txHash}`}</p>
+          <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
         </a>
       )
     }
@@ -281,7 +279,7 @@ export const airdrop = async (mintAmount) => {
       to: config.contractAddress,
       from: window.ethereum.selectedAddress,
       gas: String(30000),
-      data: nftContract.methods.publicSaleMint(mintAmount).encodeABI(),
+      data: nftContract.methods.Airdrop(mintAmount).encodeABI(),
       nonce: nonce.toString(16)
     }
   
@@ -295,8 +293,7 @@ export const airdrop = async (mintAmount) => {
         success: true,
         status: (
           <a href={`https://goerli.etherscan.io/tx/${txHash}`} target="_blank">
-            <p>✅ Check out your transaction on Etherscan:</p>
-            <p>{`https://goerli.etherscan.io/tx/${txHash}`}</p>
+            <p className='underline'>✅ Check out your transaction on Etherscan ✅</p>
           </a>
         )
       }
