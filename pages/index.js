@@ -177,7 +177,7 @@ useEffect(() => {
                 : 'Not connected'} 
             </h3>
           </div>
-            <p className="hidden md:flex text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
+            <p className="hidden md:flex flex-col text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
                   <span className="text-yellow-300">{totalMinted} {'  '} </span>/<span className="text-yellow-300">{'  '} {maxSupply} {'  '}</span>Minted
             </p>
 
