@@ -230,7 +230,7 @@ useEffect(() => {
 
                     <div className="flex items-center space-x-3">
                     <p>
-                         {Number.parseFloat(isAirdroping? 0 : isWLMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : isPublicSale && totalMinted > 0 ? config.firstCost : 0).toFixed(
+                         {Number.parseFloat((isAirdroping? 0 : isWLMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : isPublicSale && totalMinted > 0 ? config.firstCost : 0)*mintAmount).toFixed(
                           4
                         )} {' '} 
                        
