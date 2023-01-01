@@ -4,12 +4,12 @@ const config = {
   title: 'pmtr test',
   description: 'test minting Dapp',
   contractAddress: '0xdF060731474f293cb6BB1529F64A8958a05ED6EC',
-  maxPerWallet: 3,
-  WlMaxMintAmount: 2,
-  maxPublicForWhitelisted : 5,
+  maxPerWallet: 10,
+  maxPerWalletWL: 1,
+  maxPerWalletAirdrop: 1,
   firstCost :0.0045 ,
   secondCost :0.009,
-  thirdtCost : 0.018,
+  thirdCost : 0.018,
   wlcost: 0.00025
 }
 

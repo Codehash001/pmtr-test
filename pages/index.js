@@ -2,22 +2,16 @@ import { useState, useEffect, } from "react";
 import { initOnboard } from "../ulits/onboard";
 import { config } from "../dapp.config";
 import {  getTotalMinted,
-          getFirstCost,
-          getSecondCost,
-          getThirdCost,
           getMaxSupply,
-          getMaxperWallet,
-          getMaxperWalletAirdrop,
-          getMaxperWalletWl,
           getNumberMinted,
-          getWlCost,
           isAirdropState,
           isPausedState,
           isPublicSaleState,
           isWlMintState,
           wlMint,
           publicMint,
-          airdrop 
+          airdrop, 
+          getMaxperWallet
                           } from "../ulits/interact";
 
 
@@ -40,7 +34,7 @@ export default function Home () {
   const [walletAddress, setWalletAddress] = useState('')
 
   const [cost, setCost] = useState(0)
-  const [ethcost, setEthcost] = useState (0)
+
 
   useEffect(() => {
     const init = async () => {
@@ -55,12 +49,12 @@ export default function Home () {
       setIsWlMint(isWlMint)
       setIsAirdroping(await isAirdropState())
 
-      setCost(isAirdroping? 0 : isWlMint? await getWlCost() : totalMinted > 7700 ? await getThirdCost() : totalMinted > 4000 ? await getSecondCost() : totalMinted > 200 ? await getFirstCost() : 0)
+      setCost(isAirdroping? 0 : isWlMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : totalMinted > 200 ? config.firstCost : 0)
       // Global BigInt
-      setEthcost(cost/10**18)
+  
 
       setMaxMintAmount(
-        isAirdroping? await getMaxperWalletAirdrop(): isWlMint ? await getMaxperWalletWl() : await getMaxperWallet()
+        isAirdroping? config.maxPerWalletAirdrop : isWlMint ? config.maxPerWalletWL : config.maxPerWallet
       )
       
       
@@ -183,7 +177,7 @@ useEffect(() => {
             </h3>
           </div>
             <p className="text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
-                  <span className="text-yellow-300">{totalMinted}{' '}</span>/{' '}<span className="text-yellow-300">{maxSupply}</span>Minted
+                  <span className="text-yellow-300">{totalMinted}{' '}</span>/{' '}<span className="text-yellow-300">{maxSupply}</span>{' '}Minted
             </p>
           
                   
@@ -239,7 +233,7 @@ useEffect(() => {
                         {/* {Number.parseFloat(paused ? '0.00' : isWlMint && EligbleForFreeMint ? config.wlcost*(mintAmount-1) : isWlMint ? config.wlcost*mintAmount : config.publicSalePrice*mintAmount).toFixed(
                           2
                         )}{' '} */}
-                        {ethcost}
+                        {cost}
                         {' '}ETH
                       </p>{' '}
                       <span className="text-yellow-300">+ GAS</span>
@@ -285,12 +279,12 @@ useEffect(() => {
   </div>
 </div>
 
-            <div className="font-Kanit mt-5">
+            <div className="font-Kanit">
               {status && (
               <div
                 className={`border ${
                   status.success ? 'border-green-500 text-white' : 'border-red-600 text-white'
-                } rounded-md text-start h-full px-4 py-4 w-full mx-auto mt-8 md:mt-4"`}
+                } rounded-md text-start h-full px-4 py-4 w-full mx-auto mt-8 md:mt-5"`}
               >
                 <p className="flex flex-col space-y-2 text-sm md:text-base break-words ...">
                   {status.message}
