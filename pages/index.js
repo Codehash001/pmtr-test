@@ -52,20 +52,9 @@ export default function Home () {
       setCost(isAirdroping? 0 : isWLMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : isPublicSale && totalMinted > 0 ? config.firstCost : 0)
       // Global BigInt
   
-      let maxlimit = 0 
-      if(isAirdroping) {
-        maxlimit = config.maxPerWalletAirdrop
-      }
-
-      if (isWLMint) {
-        maxlimit = config.maxPerWalletWL
-      }
-
-      if (isPublicSale) {
-        maxlimit = config.maxPerWallet
-      }
-
-      setMaxMintAmount(maxlimit)
+      setMaxMintAmount(
+        isWLMint ? config.maxPerWalletWL : config.maxPerWallet
+      )
       
       
     }
