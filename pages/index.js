@@ -54,7 +54,7 @@ export default function Home () {
   
 
       setMaxMintAmount(
-        isAirdroping? config.maxPerWalletAirdrop : isWLMint ? config.maxPerWalletWL : isPublicSale? config.maxPerWallet : 0
+        isAirdroping ? config.maxPerWalletAirdrop : isWLMint ? config.maxPerWalletWL : isPublicSale ? config.maxPerWallet : 0
       )
       
       
