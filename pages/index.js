@@ -230,11 +230,11 @@ useEffect(() => {
 
                     <div className="flex items-center space-x-3">
                     <p>
-                        {/* {Number.parseFloat(paused ? '0.00' : isWlMint && EligbleForFreeMint ? config.wlcost*(mintAmount-1) : isWlMint ? config.wlcost*mintAmount : config.publicSalePrice*mintAmount).toFixed(
+                         {Number.parseFloat({cost}).toFixed(
                           2
-                        )}{' '} */}
-                        {cost}
-                        {' '}ETH
+                        )}{' '} 
+                       
+                        ETH
                       </p>{' '}
                       <span className="text-yellow-300">+ GAS</span>
                     </div>
