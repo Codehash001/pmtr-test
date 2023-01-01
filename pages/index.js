@@ -147,16 +147,16 @@ useEffect(() => {
 
   return (
     <div className="min-h-screen w-full overflow-hidden flex flex-col items-center justify-center">
-      <img src="/background.png" className="object-over w-full h-full absolute"/>
+      <img src="/bg.png" className="object-over w-full h-full absolute"/>
 
       <div className='relative flex flex-col items-center md:flex-row md:justify-between justify-between md:py-12 w-full h-screen'>
       
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto"> 
-            <img src='1.png' className="w-[125px] h-[125px] rounded-md border border-gray-100"/>
+            <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100"/>
           </div>
           <div className="mx-auto">
-            <img src='2.png' className="w-[175px] h-[175px] rounded-md border border-gray-100"/>
+            <img src='gif2.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100"/>
           </div>
       </div>
 
@@ -300,10 +300,10 @@ useEffect(() => {
 
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='1.png' className="w-[175px] h-[175px] rounded-md border border-gray-100"/>
+            <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100"/>
           </div>
           <div className="mx-auto">
-            <img src='2.png' className="w-[125px] h-[125px] rounded-md border border-gray-100"/>
+            <img src='gif4.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100"/>
           </div>
       </div>
       </div>
