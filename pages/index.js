@@ -278,7 +278,7 @@ useEffect(() => {
     <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </a>
   <a className="bg-white rounded-full mx-2 shadow-lg hove:shadow-black/60 hover:rotate-12" href='http://etherscan.io'>
-    <img src='etherscan.svg' className='h-8 w-8 m-1'/>
+    <img src='etherscan.svg' className='h-[320px] w-[320px] m-1'/>
   </a>
 </div>
 
