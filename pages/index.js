@@ -177,14 +177,14 @@ useEffect(() => {
             </h3>
           </div>
             <p className="text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
-                  <span className="text-yellow-300">{totalMinted}{' '}</span>/{' '}<span className="text-yellow-300">{maxSupply}</span>{' '}Minted
+                  <span className="text-brand-03">{totalMinted}{' '}</span>/{' '}<span className="text-brand-03">{maxSupply}</span>{' '}Minted
             </p>
           
                   
             {/* Increment decrement buttons */}
             <div className="font-Kanit flex items-center justify-between w-full mt-5">
                   <button
-                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
+                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-full"
                     onClick={decrementMintAmount}>
                      <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +205,7 @@ useEffect(() => {
                   {mintAmount} 
                   </p>
                   <button
-                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-md"
+                    className="w-12 h-8 md:w-14 md:h-10 flex items-center justify-center text-black hover:shadow-lg bg-gray-300 font-bold rounded-full"
                     onClick={incrementMintAmount} >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -268,15 +268,21 @@ useEffect(() => {
 
 {/* social media icons */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
-  <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
-    <img src='discord.svg' className='h-8 w-8 m-1'/>
-  </div>
-  <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
-    <img src='facebook.svg' className='h-8 w-8 m-1'/>
-  </div>
-  <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
-    <img src='twitter.svg' className='h-8 w-8 m-1'/>
-  </div>
+  <a href="http://discrod.com">
+    <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
+      <img src='discord.svg' className='h-8 w-8 m-1'/>
+    </div>
+  </a>
+  <a href="http://facebook.com">
+    <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
+      <img src='facebook.svg' className='h-8 w-8 m-1'/>
+    </div>
+  </a>
+  <a href="http://twitter.com">
+    <div className="bg-white rounded-full mx-2 hove:shadow-black/60 hover:rotate-12">
+      <img src='twitter.svg' className='h-8 w-8 m-1'/>
+    </div>
+  </a>
 </div>
 
             <div className="font-Kanit">
