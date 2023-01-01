@@ -1,15 +1,16 @@
 const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 
 const config = {
-  title: 'test dapp',
+  title: 'pmtr test',
   description: 'test minting Dapp',
-  contractAddress: '0xf47F5A0968877F1CDeB73175B46DdFAd275e3430',
-  maxMintAmount: 3,
+  contractAddress: '0xdF060731474f293cb6BB1529F64A8958a05ED6EC',
+  maxPerWallet: 3,
   WlMaxMintAmount: 2,
   maxPublicForWhitelisted : 5,
-  firstCost :0 ,
-  wlcost: 0.01,
-  publicSalePrice:0.01
+  firstCost :0.0045 ,
+  secondCost :0.009,
+  thirdtCost : 0.018,
+  wlcost: 0.00025
 }
 
 const onboardOptions = {

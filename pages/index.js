@@ -1,5 +1,6 @@
 import { useState, useEffect, } from "react";
 import { initOnboard } from "../ulits/onboard";
+import { config } from "../dapp.config";
 import {  getTotalMinted,
           getFirstCost,
           getSecondCost,
@@ -171,8 +172,8 @@ useEffect(() => {
           <div className="flex flex-col items-center w-full py-4 mt-16 md:mt-0 px-16">
           
           <div className='pb-4  flex flex-col items-center'>
-            <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider">
-            {paused ? 'We will live soon..': isAirdroping? 'Airdrop is Live!': isWlMint ? 'Whitelisted-Minting is Live' : isPublicSale?'Minting Is Live!' :'We will live soon..' }
+            <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider text-justify">
+            {paused ? 'Will live soon..': isAirdroping? 'Airdrop is Live!': isWlMint ? 'Whitelisted-sale' : isPublicSale?'Public Sale' :'Will live soon..' }
             </h1>
 
             <h3 className="text-sm text-gray-100 tracking-widest">
@@ -181,8 +182,8 @@ useEffect(() => {
                 : 'Not connected'} 
             </h3>
           </div>
-            <p className="text-2xl text-white font-semibold font-Kanit mt-5 tracking-wide">
-                  {totalMinted}/{maxSupply} NFTs minted
+            <p className="text-2xl text-white font-medium font-Kanit mt-5 tracking-wide">
+                  <span className="text-yellow-300">{totalMinted}{' '}</span>/{' '}<span className="text-yellow-300">{maxSupply}</span>Minted
             </p>
           
                   

@@ -14,12 +14,12 @@ contract PMTR is ERC721A, Ownable, ReentrancyGuard {
   string public baseExtension = ".json";
   string public notRevealedUri; 
 
-  uint256 public firstCost = 0.001 ether; //put equal usd values
-  uint256 public secondCost = 0.003 ether; // ''
-  uint256 public thirdCost = 0.005 ether; // ''
+  uint256 public firstCost = 0.0045 ether; //put equal usd values
+  uint256 public secondCost = 0.009 ether; // ''
+  uint256 public thirdCost = 0.018 ether; // ''
   
   uint256 private cost;
-  uint256 public wlCost = 0.0001 ether;
+  uint256 public wlCost = 0.0025 ether;
 
   uint256 public maxSupply = 10000;
   uint256 public maxWlSupply = 200; // only 100 after mint 100 in airdrop
