@@ -153,15 +153,15 @@ useEffect(() => {
       
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto"> 
-            <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100"/>
+            <img src='gif1.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 drop-shadow-lg"/>
           </div>
           <div className="mx-auto">
-            <img src='gif2.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100"/>
+            <img src='gif2.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 drop-shadow-lg"/>
           </div>
       </div>
 
       <div className=" bg-black/75 filter rounded-md flex flex-col items-center
-    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 w-full">
+    bg-gray-800 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border-2 border-gray-100 backdrop-saturate-150 w-full drop-shadow-lg">
         <div className="flex flex-col items-center w-full"> 
           <div className="flex flex-col items-center w-full py-4 mt-16 md:mt-0 px-16">
           
@@ -268,13 +268,13 @@ useEffect(() => {
 
 {/* social media icons */}
 <div className="flex w-full items-center justify-evenly mt-5 px-10">
-  <div className="bg-white rounded-full mx-2">
+  <div className="bg-white rounded-full mx-2 hove:drop-shadow-xl hover:rotate-30">
     <img src='discord.svg' className='h-8 w-8 m-1'/>
   </div>
-  <div className="bg-white rounded-full mx-2">
+  <div className="bg-white rounded-full mx-2 hove:drop-shadow-xl hover:rotate-30">
     <img src='facebook.svg' className='h-8 w-8 m-1'/>
   </div>
-  <div className="bg-white rounded-full mx-2">
+  <div className="bg-white rounded-full mx-2 hove:drop-shadow-xl hover:rotate-30">
     <img src='twitter.svg' className='h-8 w-8 m-1'/>
   </div>
 </div>
@@ -300,10 +300,10 @@ useEffect(() => {
 
       <div className='flex w-full items-center justify-between'>
           <div className="mx-auto">
-            <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100"/>
+            <img src='gif3.gif' className="w-[175px] h-[175px] rounded-md border border-gray-100 drop-shadow-lg"/>
           </div>
           <div className="mx-auto">
-            <img src='gif4.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100"/>
+            <img src='gif4.gif' className="w-[125px] h-[125px] rounded-md border border-gray-100 drop-shadow-lg"/>
           </div>
       </div>
       </div>
