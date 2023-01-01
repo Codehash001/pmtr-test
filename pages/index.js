@@ -24,7 +24,7 @@ export default function Home () {
 
   const [paused, setPaused] = useState(false)
   const [isPublicSale, setIsPublicSale] = useState(false)
-  const [isWlMint, setIsWlMint] = useState(false)
+  const [isWLMint, setIsWlMint] = useState(false)
   const [isAirdroping, setIsAirdroping] = useState(false)
 
   const [status, setStatus] = useState(null)
@@ -49,12 +49,12 @@ export default function Home () {
       setIsWlMint(isWlMint)
       setIsAirdroping(await isAirdropState())
 
-      setCost(isAirdroping? 0 : isWlMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : isPublicSale && totalMinted > 0 ? config.firstCost : 0)
+      setCost(isAirdroping? 0 : isWLMint? config.wlcost : totalMinted > 7700 ? config.thirdCost : totalMinted > 4000 ? config.secondCost : isPublicSale && totalMinted > 0 ? config.firstCost : 0)
       // Global BigInt
   
 
       setMaxMintAmount(
-        isAirdroping? config.maxPerWalletAirdrop : isWlMint ? config.maxPerWalletWL : config.maxPerWallet
+        isAirdroping? config.maxPerWalletAirdrop : isWLMint ? config.maxPerWalletWL : isPublicSale? config.maxPerWallet : 0
       )
       
       
@@ -167,7 +167,7 @@ useEffect(() => {
           
           <div className='pb-4  flex flex-col items-center'>
             <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider text-justify">
-            {paused ? 'Will live soon..': isAirdroping? 'Airdrop is Live!': isWlMint ? 'Whitelisted-sale' : isPublicSale?'Public Sale' :'Will live soon..' }
+            {paused ? 'Will live soon..': isAirdroping? 'Airdrop is Live!': isWLMint ? 'Whitelisted-sale' : isPublicSale?'Public Sale' :'Will live soon..' }
             </h1>
 
             <h3 className="text-sm text-gray-100 tracking-widest">
@@ -253,7 +253,7 @@ useEffect(() => {
                         : 'bg-gradient-to-br from-gray-900 to-black shadow-lg border border-transparent hover:shadow-black/60'
                     } font-Kanit mt-5 mb-0 font-medium w-full px-6 py-3 rounded-md text-2xl text-white  mx-4 tracking-wide uppercase border-violet-50`}
                     disabled={paused || isMinting}
-                    onClick={ isAirdroping? airdropHandler : isWlMint ? wlMintHandler : publicMintHandler}
+                    onClick={ isAirdroping? airdropHandler : isWLMint ? wlMintHandler : publicMintHandler}
                   >
                     {isMinting ? 'Busy...' : 'Mint Now'}
                   </button>
