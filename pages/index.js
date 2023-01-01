@@ -166,8 +166,8 @@ useEffect(() => {
           <div className="flex flex-col items-center w-full py-4 mt-16 md:mt-0 px-16">
           
           <div className='pb-4  flex flex-col items-center'>
-            <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider text-justify">
-            {paused ? 'Will live soon..': isAirdroping? 'Airdrop is Live!': isWLMint ? 'Whitelisted-sale' : isPublicSale?'Public Sale' :'Will live soon..' }
+            <h1 className="font-Kanit uppercase font-bold text-3xl md:text-4xl text-brand-02 bg-clip-text mt-0 tracking-wider text-center">
+            {paused ? 'Will live soon..': isAirdroping? 'Airdrop is Live!': isWLMint ? 'Whitelisted sale' : isPublicSale?'Public Sale' :'Will live soon..' }
             </h1>
 
             <h3 className="text-sm text-gray-100 tracking-widest">
