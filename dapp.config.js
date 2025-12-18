@@ -1,9 +1,9 @@
 const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 
 const config = {
-  title: 'pmtr test',
-  description: 'test minting Dapp',
-  contractAddress: '0xdF060731474f293cb6BB1529F64A8958a05ED6EC',
+  title: 'pmtr mint',
+  description: 'pmtr minting Dapp',
+  contractAddress: '0x1f1F860A0A3bEC70107d31CFDcAEfF2E59631a27',
   maxPerWallet: 10,
   maxPerWalletWL: 1,
   maxPerWalletAirdrop: 1,
@@ -15,7 +15,7 @@ const config = {
 
 const onboardOptions = {
   dappId: process.env.NEXT_PUBLIC_DAPP_ID,
-  networkId: 5, // Goerli
+  networkId: 1, // mainnet
   darkMode: true,
   walletSelect: {
     description:'Plaese select a wallet',

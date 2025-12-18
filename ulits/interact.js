@@ -73,23 +73,20 @@ export const isWlMintState = async () => {
 
 // Minting Prices
 
-// export const getWlCost = async () => {
-//     const PresalePrice = await nftContract.methods.wlCost().call()
-//     return PresalePrice
-// }
-// export const getFirstCost = async () => {
-//     const Price = await nftContract.methods.firsCost().call()
-//     return Price
-// }
-// export const getSecondCost = async () => {
-//   const Price = await nftContract.methods.secondCost().call()
-//   return Price
-// }
-// export const getThirdCost = async () => {
-//   const Price = await nftContract.methods.thirdCost().call()
-//   return Price
-// }
+export const getWlCost = async () => {
+    const cost = await nftContract.methods.wlCost().call()
+    return web3.utils.fromWei(cost, 'ether')
+}
 
+export const getPublicCost = async () => {
+    const totalMinted = await nftContract.methods.totalSupply().call()
+    const firstCost = await nftContract.methods.firstCost().call()
+    const secondCost = await nftContract.methods.secondCost().call()
+    const thirdCost = await nftContract.methods.thirdCost().call()
+
+    const cost = ( totalMinted > 7700 ? thirdCost : totalMinted > 4000 ? secondCost : firstCost)
+    return web3.utils.fromWei(cost, 'ether')
+}
 
 
 //Set up wl mint------------------------------------------------------------------------------------>
